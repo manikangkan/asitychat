@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  input {
+    @apply bg-transparent dark:text-white dark:placeholder:text-gray-400 py-2 px-4 outline-none border-none rounded-sm placeholder:text-cc-400 text-cc-400;
+  }
+
+  .icon-style {
+    @apply hover:bg-cc-100 dark:hover:bg-neutral-700 cursor-pointer w-12 aspect-square rounded-full grid place-content-center;
+  }
+
+  h1{
+    @apply font-bold text-cc-500 dark:text-white;
+  }
+
+  p{
+    @apply text-xs text-cc-400 dark:text-gray-400;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 100px;
+  border: none;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6b7280;
+}
+
+::-webkit-scrollbar-track-piece:end {
+  margin-bottom: 50px;
+}
+
+::-webkit-scrollbar-track-piece:start {
+  margin-top: 50px;
+}
